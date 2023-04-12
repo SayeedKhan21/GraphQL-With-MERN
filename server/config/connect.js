@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 
 const connectDB = async () => {
-
+    // console.log(process.env.PORT)
     const conn  = await mongoose.connect(process.env.MONGODB_URI)
 
     console.log(`MongoDB connected ${conn.connection.host}`.cyan.underline.bold)

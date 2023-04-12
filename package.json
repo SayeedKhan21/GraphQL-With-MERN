@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1" ,
-    "start" : "node server/index.js" ,
-    "dev" : "nodemon -r dotenv/config server/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "dev": "nodemon --delay 500 -r dotenv/config server/index.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,6 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-graphql": "^0.12.0",
-    "graphql": "^15.8.0",
     "mongoose": "^7.0.3"
   }
 }
